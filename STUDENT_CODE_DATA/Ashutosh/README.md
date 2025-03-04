@@ -7,5 +7,5 @@ p_Par:  proportion of trial duration partner looks at subject
 p_Both: proportion of trial duration both subject and partner simultaneously look at each other
 
 
-4th column is choice (dependent / prdicted variable).
+4th column is choice (dependent / predicted variable).
 It is a binary variable,  successes are coded as 1s and failures are coded as 0.

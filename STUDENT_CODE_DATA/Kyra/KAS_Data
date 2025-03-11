@@ -1,0 +1,5 @@
+This data is a mat file that contains a table "For Class" This table has the variables "Expt" "Acclimation" "Ramp1", "Ramp2" "OA 1" and "OA 2". The last four contain tables where the first column is the temperature of a given recorded burst and the frequency is the current rhythm frequency.
+
+I want to be able to compare how similar the temperature responses are between different Ramps/conditons. So I want to be able to say how similar is the relationship between temperature and frequency in Ramp1 to that of Ramp 2. There are different numbers of burst recorded over the course of the temperature ramp and/or at any given temperature, and the relationship across the entire range is not well fit by a single function.
+
+How shoudl I go about quantifying the similarity of responses? I have had a suggestion of mutual infomration, but I'm not sure how to do that in this context.

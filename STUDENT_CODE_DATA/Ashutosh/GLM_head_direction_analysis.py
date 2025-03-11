@@ -14,8 +14,8 @@ import seaborn as sns
 
 #%% Load data and fit model
 
-WT = pd.read_csv("C:/Users/shukl/OneDrive/Documents/MATLAB/WT.csv")
-FX = pd.read_csv("C:/Users/shukl/OneDrive/Documents/MATLAB/FX.csv")
+WT = pd.read_csv("/Users/shantanu/Documents/GitHub/2025_NBIO_207A/STUDENT_CODE_DATA/Ashutosh/WT.csv")
+FX = pd.read_csv("/Users/shantanu/Documents/GitHub/2025_NBIO_207A/STUDENT_CODE_DATA/Ashutosh/FX.csv")
 
 # Define and fit the GLM
 model_formula = 'choice ~ p_Sub + p_Par + p_Both'

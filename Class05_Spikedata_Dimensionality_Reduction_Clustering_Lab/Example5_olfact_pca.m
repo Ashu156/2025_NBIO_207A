@@ -6,7 +6,10 @@
 % 0 ms is time of cue
 
 bins = [-450:50:1000];
-load('cs_FRdata.mat')
+load ("Example5_olfact_FRdata.mat");
+leftTrials_ori = leftTrials;
+rightTrials = rightTrials;
+%load('cs_FRdata.mat')
 leftTrials = cellfun(@(x) x(:), leftTrials,'UniformOutput',false);
 rightTrials = cellfun(@(x) x(:), rightTrials,'UniformOutput',false);
 L = cat(2,leftTrials{:})';

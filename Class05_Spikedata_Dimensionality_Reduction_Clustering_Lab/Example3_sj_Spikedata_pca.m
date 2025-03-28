@@ -1,4 +1,7 @@
 
+
+load Example3_spikedata_pca_problem
+
 %%
 
 % PCA on Firing rate 
@@ -59,6 +62,7 @@ axis([0 3.5 0 100]);
 win = [200 800]; %-200ms to 800ms
 leftvector=[]; rightvector=[]; %For each timebin, save Ntrial X Nnenuron firing matrix
 
+binsize=100;
 Nneu = size(lefttrials,1); 
 Nlefttr = length(leftidx);
 Nrighttr = length(rightidx);

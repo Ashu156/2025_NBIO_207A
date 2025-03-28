@@ -17,7 +17,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %clear
-question_part = 1;      % Can be 1, 2, or 3 for different questions
+question_part = 3;      % Can be 1, 2, or 3 for different questions
 %rng(3)
 Ncells = 50;            % Number of distinct neural firing rates to use
 

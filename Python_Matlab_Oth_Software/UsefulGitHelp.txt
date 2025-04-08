@@ -1,0 +1,100 @@
+----------------------------------------------------------------------------------------------------
+                                                               
+                                       ,ad8888ba,  88          
+                                      d8"'    `"8b ""   ,d     
+                                     d8'                88     
+                                     88            88 MM88MMM  
+                                     88      88888 88   88     
+                                     Y8,        88 88   88     
+                                      Y8a.    .a88 88   88,    
+                                       `"Y88888P"  88   "Y888  
+                                                               
+                                                               
+                                                                                               
+     88888888888                                                   88            88            
+     88                                                      ,d    ""            88            
+     88                                                      88                  88            
+     88aaaaa     ,adPPYba, ,adPPYba,  ,adPPYba, 8b,dPPYba, MM88MMM 88 ,adPPYYba, 88 ,adPPYba,  
+     88"""""     I8[    "" I8[    "" a8P_____88 88P'   `"8a  88    88 ""     `Y8 88 I8[    ""  
+     88           `"Y8ba,   `"Y8ba,  8PP""""""" 88       88  88    88 ,adPPPPP88 88  `"Y8ba,   
+     88          aa    ]8I aa    ]8I "8b,   ,aa 88       88  88,   88 88,    ,88 88 aa    ]8I  
+     88888888888 `"YbbdP"' `"YbbdP"'  `"Ybbd8"' 88       88  "Y888 88 `"8bbdP"Y8 88 `"YbbdP"'  
+                                                                                               
+                                                                                               
+----------------------------------------------------------------------------------------------------
+Command                     Purpose
+----------------------------------------------------------------------------------------------------
+git init                    initialize local repository
+git add <files>             add files to stage for later commit
+git status                  view what changes are staged and what are not
+git commit -m '<message>'   commit stage to project repository
+git push                    push local repository changes to remote repository
+git pull                    pull remote repository changes to local repository
+git clone                   initialize local repositoty as a clone of a remote repository
+git fetch                   check 
+----------------------------------------------------------------------------------------------------
+                                                                                  
+                 88888888888                                                      
+                 88                        ,d                                     
+                 88                        88                                     
+                 88aaaaa     8b,     ,d8 MM88MMM 8b,dPPYba, ,adPPYYba, ,adPPYba,  
+                 88"""""      `Y8, ,8P'    88    88P'   "Y8 ""     `Y8 I8[    ""  
+                 88             )888(      88    88         ,adPPPPP88  `"Y8ba,   
+                 88           ,d8" "8b,    88,   88         88,    ,88 aa    ]8I  
+                 88888888888 8P'     `Y8   "Y888 88         `"8bbdP"Y8 `"YbbdP"'  
+                                                                                  
+                                                                                  
+----------------------------------------------------------------------------------------------------
+git fetch                   check if local repository is up to date with remote repository
+git branch                  view all branches of local repository
+git checkout <branch>       switch to <branch> as current working branch
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Other Useful Git Lines
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Starting
+-----------
+git init: run in working folder to setup git repo
+git add <file>: adds file to staging area and begins tracking changes ('git add .' adds all files in directory)
+git diff <file>: check differences between file and last version added to staging
+git commit -m "<message>": commits changes with commit message (<40 char, present tense)
+git status: gives status of repo
+git log: prints commit log
+
+File Management
+----------------
+git rm --cached <file>: remove file from staging area
+git show HEAD: show the head commit (usually most recent)
+git checkout HEAD <file>: restores file in working directory to look as it did at last commit
+git reset HEAD <file>: resets a file in the staging area to match the HEAD commit
+git reset <SHA>: can reset to a specific commit using the first 7 characters of the SHA;
+                Resets repository, all commits after are gone.
+
+Branching
+----------
+git branch: tells you the current branch
+git branch <name>: creates new branch (does not put you on it)
+git branch -d <name>: delete branch
+git checkout <branch>: switches you onto a branch
+git merge <branch>: merges changes from <branch> onto current branch
+
+Cloning
+---------
+git clone <remote_location> <clone_name>: clones <remote_location> into <clone_name>
+      - <remote_location> is automatically named origin when in the <clone_dir>
+git remove -v: when run in a cloned directory, lists the origin directory
+git fetch: pulls updates from the origin and puts in the origin/master branch
+      - can be followed by 'git merge origin/master' to update
+git push origin <brach_name>: pushes a branch back to the origin as a branch
+
+Setup Remote repository
+------------------------
+create empty repo on github
+git init
+git add .
+git commit -m '<msg>'
+git remote add origin <github repo  URL>: sets origin URL (git remote -v can be used to check)
+git push -u origin master: pushes repo to origin and -u sets upstream for pull purposes

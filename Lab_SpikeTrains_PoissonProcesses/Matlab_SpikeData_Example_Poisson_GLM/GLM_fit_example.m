@@ -20,7 +20,7 @@ else
     %filterString = 'strcmp($area, ''PFC'') && strcmp($ripmodtag, ''y'')';
     filterString = 'strcmp($area, ''PFC'') && ($numspikes > 100) && strcmp($ripmodtag2, ''y'') ';
     pcellindices = evaluatefilter(cellinfo{day}{epoch}, filterString);
-    cellsp = [repmat([day epoch], size(pcellindices,1),1 ), pcellindices]; % day-epoch-tet-cell for CA1 cells
+    cellsp = [repmat([day epoch], size(pcellindices,1),1 ), pcellindices]; % day-epoch-tet-cell for PFC cells
     usecellsp = 1:size(cellsp,1); nPFCcells = size(cellsp,1);   
 end
 
